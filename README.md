@@ -1,8 +1,18 @@
 # zxfs3
 zxfs is a filesystem maded for Axiz, inspired by all fs in the world.
 
+## How to get
+Clone the repository:
+```bash
+$ git clone --depth=1 https://github.com/maldidev/zxfs
+```
+Then make it to executable anywhere:
+```bash
+$ cd zxfs
+$ ./make.sh
+```
 
-## Utilities
+### Utilities
 in repository:
 
 
