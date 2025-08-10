@@ -1,0 +1,8 @@
+#!/bin/python3
+from zxfs import ZXFS
+fs = ZXFS('zxfs.img')
+fs.open('r+b')
+fs.write_file('readme.txt', b'Theres a zxfs file format .txt, and\nwith newline space.')
+fs.save()
+fs.close()
+

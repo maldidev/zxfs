@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+import sys
+from zxfs import ZXFS
+
+if __name__=='__main__':
+    if len(sys.argv) != 2:
+        print('Usage: listzxfs <imagefile>')
+        sys.exit(1)
+    fs = ZXFS(sys.argv[1])
+    fs.open('rb')
+    files = fs.list_files()
+    for name,size in files:
+        print(f'{name}  {size} bytes')
+    fs.close()
+
